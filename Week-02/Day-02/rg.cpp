@@ -18,7 +18,7 @@ int main() {
         for(auto it:mp){
             if(it.second%2!=0) oddC++;
         }
-        cout<<(oddC>k+1?"NO":"YES")<<endl;
+        cout<<(oddC-1>k?"NO":"YES")<<endl;
     }
     return 0;
 }

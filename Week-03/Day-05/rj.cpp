@@ -9,7 +9,7 @@ int main() {
     while(t--){
         int n,m;
         cin>>n>>m;
-        int v[n][m];
+        vector<vector<int>> v(n, vector<int>(m));
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 cin>>v[i][j];

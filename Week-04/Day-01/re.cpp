@@ -14,10 +14,12 @@ int main() {
         for(ll i=0;i<n;i++)cin>>v[i];
         sort(v.begin(),v.end());
         ll count=b;
+        ll c2=0;
         for(auto x:v){
-            count+=min(a-1,x);
+            count+=min(a,x);
+            if(min(a,x)==a)c2++;
         }
-        cout<<count<<endl;
+        cout<<count-c2<<endl;
     }
     return 0;
-}
+} 

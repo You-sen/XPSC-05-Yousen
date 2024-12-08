@@ -1,0 +1,15 @@
+Random
+a
+https://codeforces.com/problemset/problem/1975/A
+b
+https://codeforces.com/problemset/problem/1974/A
+c
+https://codeforces.com/problemset/problem/1977/A
+d
+https://codeforces.com/problemset/problem/1828/B
+e
+https://codeforces.com/problemset/problem/1705/B
+f
+https://codeforces.com/problemset/problem/1985/C
+g
+https://codeforces.com/problemset/problem/1676/F

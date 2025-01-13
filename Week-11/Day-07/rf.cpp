@@ -25,11 +25,9 @@ void solve(){
     for(int i=0;i<v.size();i++){
         int temp=v[i]+n;
         int pos=lower_bound(v.begin(),v.end(),temp)-v.begin()-i;
-        cout<<"pos->"<<pos<<endl;
-        cout<<v[pos]<<endl;
         total=max(total,pos);
     }
-    //cout<<total<<endl;
+    cout<<total<<endl;
 }
 
 int main() {

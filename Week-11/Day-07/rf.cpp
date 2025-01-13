@@ -24,8 +24,8 @@ void solve(){
     sort(v.begin(),v.end());
     for(int i=0;i<v.size();i++){
         int temp=v[i]+n;
-        int pos=lower_bound(v.begin(),v.end(),temp)-v.begin()-i;
-        total=max(total,pos);
+        int pos=lower_bound(v.begin(),v.end(),temp)-v.begin();
+        total=max(total,pos-i);
     }
     cout<<total<<endl;
 }

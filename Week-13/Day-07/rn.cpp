@@ -23,9 +23,6 @@ void solve(){
         return;
     }
     auto ok=[&](ll gap){
-        if(gap==0){
-            return v[0]*d>=c;
-        }
         ll total2=0,gain=0;
         if(gap>=n){
             total2=accumulate(v.begin(),v.end(),0LL);
@@ -47,7 +44,7 @@ void solve(){
         }
         return gain>=c;
     };
-    ll l=0,r=d+2,ans=-1,mid;
+    ll l=0,r=d,ans=-1,mid;
     while(l<=r){
         mid=l+(r-l)/2;
         if(ok(mid+1)){

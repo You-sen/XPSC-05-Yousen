@@ -10,9 +10,9 @@ void dfs(int current,int parent, int catsCount){
     bool leaf=1;
     for(auto childs:tree[current]){
         if(childs==parent)continue;
-        leaf=0;
         int count=cats[childs]?catsCount+1:0;
         dfs(childs,current,count);
+        leaf=0;
     }
     ans+=leaf;
 }
